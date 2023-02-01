@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Scraper</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <link href="{{ url_for('static', filename='css/search.css') }}" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+</head>
+<body>
+  <div class="search">
+    <div class="search-bgimage"></div>
+    <div class="search-main container">
+      <div class="hgroup-style">
+        <a href="/">Go to home</a>  
+        <h1 class="search-h1">Search Results for "{{keyword}}"</h1>
+        <a target="_blank" href="/export?keyword={{keyword}}">Export to file</a> 
+        <h2 class="search-h2">{{jobs_length}} results</div>
+      </hgroup>
+      
+      <table role="grid" class="container">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Position</th>
+            <th>Location</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for job in jobs %}
+            <tr>
+              <td>{{job.company}}</td>
+              <td>{{job.position}}</td>
+              <td>{{job.location}}</td>
+              <td><a href="{{job.link}}" target="_blank">Apply</a></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

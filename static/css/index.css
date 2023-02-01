@@ -1,0 +1,152 @@
+@import "styles.css";
+.home{
+  position: relative;
+}
+
+.home-bgimage {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  z-index: 1;
+}
+
+.home-main {
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-main h4{
+  color: #fff;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 2px grey;
+  
+  color:#fff;
+}
+
+h3 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+h4{
+  text-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+}
+
+#represented {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.flex-container{
+  display: flex;
+}
+
+.flex-item{
+  flex-direction:row;
+}
+
+.container{
+  overflow: hidden;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.container input{
+  background: #ffffffc4;
+  color: #000;
+  border: none;
+}
+
+.container input#search {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-top:10px;
+  height: 56px
+}
+
+body{
+  background: #fff;
+}
+
+button{
+  height: 150px;
+  width: 150px;
+  background: #ffffffc4;
+  margin: 10px;
+}
+
+.icon {
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  font-size: 10pt;
+  height: 56px;
+  width: 56px;
+  border:none;
+}
+
+.container button.icon svg{
+  color: #000;
+}
+
+.img-box {
+  display: flex;
+}
+
+.img-jobsite {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+
+/* .search-bg{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(#80FFDB, #5390D9) no-repeat bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  z-index: 1;
+}
+
+.search-h1 {
+  margin-bottom: 0px;
+}
+
+.search-main {
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%);
+} */

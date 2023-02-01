@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <title>Job Scraper</title>
+  </head>
+  <body>
+<!--     <button class="box"></div> -->
+    <div class="home">
+      <div class="home-bgimage"></div>
+      <main class="container home-main">
+        <h1>Job Scraper</h1>
+        <h4>What job do you want?</h4>
+          <form action="/search" method="get" class="container flex-container">
+            <input class="flex-item" type="search" id="search" name="keyword" placeholder="Write keyword please" />
+            <button class="icon flex-item" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        
+        <div id="represented">
+          <h3>Represented with:</h3>
+          <div class="img-box">
+            <a href="https://remoteok.com" target="_blank">
+              <img class="img-jobsite" src="">
+            </a>
+            <a href="https://weworkremotely.com" target="_blank">
+              <img class="img-jobsite" src="https://weworkremotely.com/assets/wwr-social-fd7d545c56e975b65fae9cf49346aac95a8cdb4774b2c269af89ac8993141380.png">
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+    
+  </body>
+</html>
