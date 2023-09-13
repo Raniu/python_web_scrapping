@@ -1,5 +1,7 @@
 # python_web_scrapping
 
+2022.11.28 ~ 2022.12.12
+
 - 기술 스택에 맞는 채용공고를 보여주는 웹 서비스
 - requests 모듈을 사용하여 GET, POST
 - 구직사이트([https://remoteok.com/](https://remoteok.com/**))에 나와 있는 기술스택을 Beautiful Soup으로 Scrapping 및  데이터 파싱(Data Parsing)
